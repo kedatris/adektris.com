@@ -13,6 +13,7 @@ import {
   vw450,
   vw500,
 } from "@/css/size";
+import { mediaQuery } from "@/css/media";
 import imageWavy from "@/images/wavy.png";
 
 export const aboutWrapper = css`
@@ -30,6 +31,10 @@ export const aboutWrapper = css`
     background: url(${imageWavy.src}) no-repeat center;
     background-size: contain;
   }
+
+  ${mediaQuery(`
+    width: 100vh;
+  `)}
 `;
 
 export const aboutContent = css`

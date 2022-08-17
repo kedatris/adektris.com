@@ -1,12 +1,17 @@
 import { css } from "@emotion/css";
 import { black, white, yellow } from "@/css/colors";
 import { vw14, vw16, vw24, vw32, vw45, vw52, vw100, vw150 } from "@/css/size";
+import { mediaQuery } from "@/css/media";
 
 export const footerWrapper = css`
   position: relative;
   padding: ${vw150} 0 ${vw24};
   background: ${black};
   color: ${white};
+
+  ${mediaQuery(`
+    width: 100vh;
+  `)}
 `;
 
 export const footerNote = css`

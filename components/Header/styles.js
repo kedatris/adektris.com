@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import { white, black, yellow } from "@/css/colors";
-import { vw8, vw16, vw32, vw52, vw75, vw100, vw210 } from "@/css/size";
+import { vw16, vw32, vw52, vw75, vw100, vw210 } from "@/css/size";
+import { mediaQuery } from "@/css/media";
 
 export const mb52 = css`
   margin-bottom: ${vw52};
@@ -18,6 +19,10 @@ export const headerWrapper = css`
   position: relative;
   height: 100vh;
   background-color: ${black};
+
+  ${mediaQuery(`
+    width: 100vh;
+  `)}
 `;
 
 export const headerContent = css`

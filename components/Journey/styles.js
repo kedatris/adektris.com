@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import { black, white, yellow } from "@/css/colors";
+import { mediaQuery } from "@/css/media";
 import {
   vw2,
   vw5,
@@ -28,6 +29,10 @@ export const journeyWrapper = css`
   position: relative;
   background-color: ${black};
   padding: ${vw400} ${vw210} ${vw100};
+
+  ${mediaQuery(`
+    width: 100vh;
+  `)}
 `;
 
 export const journeyTitle = css`

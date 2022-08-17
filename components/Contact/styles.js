@@ -18,6 +18,7 @@ import {
   vw600,
   vw780,
 } from "@/css/size";
+import { mediaQuery } from "@/css/media";
 
 export const mb16 = css`
   margin-bottom: ${vw16};
@@ -28,6 +29,10 @@ export const contentWrapper = css`
   padding: ${vw100} ${vw210};
   margin-bottom: ${vw210};
   margin-top: ${vw300};
+
+  ${mediaQuery(`
+    width: 100vh;
+  `)}
 `;
 
 export const contentContact = css`
