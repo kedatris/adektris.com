@@ -1,13 +1,26 @@
-import { Animated, Basic, bounce, Combined } from '../shared/styles'
+import Head from "next/head";
+import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
+import About from "@/components/About";
+import Journey from "@/components/Journey";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Home = () => (
   <div>
-    <Basic>Cool Styles</Basic>
-    <Combined>
-      With <code>:hover</code>.
-    </Combined>
-    <Animated animation={bounce}>Let's bounce.</Animated>
+    <Head>
+      <title>Adektris.com</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <div>
+      <Navbar />
+      <Header />
+      <About />
+      <Journey />
+      <Contact />
+      <Footer />
+    </div>
   </div>
-)
+);
 
-export default Home
+export default Home;
